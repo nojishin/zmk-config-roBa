@@ -35,6 +35,21 @@
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
+
+        singleQuote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <18 19>;
+        };
+
+        doubleQuotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 20>;
+        };
+
+        backQuote {
+            bindings = <&kp GRAVE>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
