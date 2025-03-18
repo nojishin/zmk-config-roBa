@@ -16,14 +16,24 @@
     combos {
         compatible = "zmk,combos";
 
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <20 21>;
-        };
-
         middleCkick {
             bindings = <&mkp MCLK>;
             key-positions = <31 32>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <30 29>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <30 31>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
         };
     };
 
@@ -52,14 +62,14 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U    &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F                        &kp G        &none                            &none          &kp H        &kp J    &kp K      &kp L      &kp SEMICOLON
-&kp Z      &kp X         &kp C         &kp V                        &kp B        &none                            &none          &kp N        &lt 5 M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 1 SPACE  &mt LEFT_SHIFT INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                 &none
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                                          &kp Y        &kp U  &kp I      &kp O      &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G        &none                              &none          &kp H        &kp J  &kp K      &kp L      &kp SEMICOLON
+&kp Z      &kp X         &kp C         &kp V                      &kp B        &none                              &none          &kp N        &kp M  &mkp LCLK  &mkp RCLK  &lt 5 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 6 ENTER                               &none
             >;
         };
 
-        NUMSYMBOL {
+        NUM {
             bindings = <
 &kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS                                    &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &none
@@ -68,12 +78,12 @@
             >;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &none          &none             &kp LESS_THAN         &kp GREATER_THAN       &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &none          &none             &none                 &none                  &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                        &trans
             >;
         };
 
@@ -116,6 +126,24 @@
         };
 
         layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        FUNCTION {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F10                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans   &trans      &trans   &trans                          &kp F12
+            >;
+        };
+
+        layer_9 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
