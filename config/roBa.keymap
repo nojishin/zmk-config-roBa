@@ -23,12 +23,12 @@
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <30 29>;
+            key-positions = <30 31>;
         };
 
         period {
             bindings = <&kp PERIOD>;
-            key-positions = <30 31>;
+            key-positions = <32 33>;
         };
 
         tab {
