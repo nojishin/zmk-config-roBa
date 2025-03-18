@@ -63,9 +63,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                                          &kp Y        &kp U  &kp I      &kp O      &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &none                              &none          &kp H        &kp J  &kp K      &kp L      &kp SEMICOLON
+&lt 3 A    &kp S         &kp D         &kp F                      &kp G        &none                              &none          &kp H        &kp J  &kp K      &kp L      &kp SEMICOLON
 &kp Z      &kp X         &kp C         &kp V                      &kp B        &none                              &none          &kp N        &kp M  &mkp LCLK  &mkp RCLK  &lt 5 SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 6 ENTER                               &none
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 7 ENTER                               &none
             >;
         };
 
@@ -116,6 +116,15 @@
             >;
         };
 
+        FUNCTION {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F10                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans   &trans      &trans   &trans                          &kp F12
+            >;
+        };
+
         layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -131,15 +140,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        FUNCTION {
-            bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F10                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans   &trans      &trans   &trans                          &kp F12
             >;
         };
 
