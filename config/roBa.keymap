@@ -79,12 +79,12 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                                          &kp Y        &kp U  &kp I      &kp O      &kp P
 &lt 3 A    &kp S         &kp D         &kp F                      &kp G        &none                              &none          &kp H        &kp J  &kp K      &kp L      &kp SEMICOLON
-&kp Z      &kp X         &kp C         &kp V                      &kp B        &none                              &none          &kp N        &kp M  &mkp LCLK  &mkp RCLK  &lt 5 SLASH
+&lt 3 Z    &kp X         &kp C         &kp V                      &kp B        &none                              &none          &kp N        &kp M  &mkp LCLK  &mkp RCLK  &lt 5 SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 1 SPACE  &lt_to_layer_0 2 INT_MUHENKAN      &kp BACKSPACE  &lt 7 ENTER                               &none
             >;
         };
 
-        NUM_NORMALSYBOL {
+        num_normalSymbol {
             bindings = <
 &kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE  &kp MINUS             &kp NON_US_BACKSLASH  &kp AT_SIGN  &kp LEFT_BRACKET
 &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &none   &none      &kp CARET             &kp SEMICOLON         &kp COLON    &kp RIGHT_BRACKET
@@ -93,7 +93,7 @@
             >;
         };
 
-        SHIFTSYMBOL {
+        shiftSymbol {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
 &trans           &trans             &trans    &trans      &trans       &trans      &trans  &kp TILDE      &kp EQUAL         &kp PLUS              &kp ASTERISK           &kp RIGHT_BRACE
@@ -102,15 +102,13 @@
             >;
         };
 
-        ARROW {
+        arrow {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans  &kp HOME        &kp UP_ARROW    &kp END            &kp PAGE_UP                              &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DELETE      &kp BACKSPACE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans             &trans           &trans          &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
