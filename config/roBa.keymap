@@ -88,7 +88,7 @@
             bindings = <
 &kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS                            &kp A   &kp A  &kp A          &kp AT_SIGN  &kp LEFT_BRACKET
 &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &kp A   &kp A   &kp A  &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &kp A   &kp A  &kp COMMA      &kp PERIOD   &kp NON_US_BACKSLASH
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &kp A   &kp A  &kp COMMA      &kp PERIOD   &kp BACKSLASH
 &trans           &trans           &trans           &trans           &trans      &trans           &trans  &trans                                     &kp A
             >;
         };
