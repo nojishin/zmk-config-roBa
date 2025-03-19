@@ -86,10 +86,10 @@
 
         num_normalSymbol {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE  &kp MINUS             &kp NON_US_BACKSLASH  &kp AT_SIGN  &kp LEFT_BRACKET
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &none   &none      &kp CARET             &kp SEMICOLON         &kp COLON    &kp RIGHT_BRACKET
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none      &kp NON_US_BACKSLASH  &kp COMMA             &kp PERIOD   &kp BACKSLASH
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                              &kp A
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE  &kp CARET             &kp MINUS      &kp AT_SIGN  &kp LEFT_BRACKET
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &none   &none      &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none      &kp COMMA             &kp PERIOD     &kp SLASH    &kp BACKSLASH
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                       &kp A
             >;
         };
 
@@ -104,10 +104,10 @@
 
         arrow {
             bindings = <
-&trans  &kp HOME        &kp UP_ARROW    &kp END            &kp PAGE_UP                              &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp PAGE_DOWN    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DELETE      &kp BACKSPACE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans             &trans           &trans          &trans  &trans                          &trans
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans          &trans        &trans          &trans           &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp DELETE      &kp BACKSPACE   &trans           &trans         &trans      &trans  &trans          &trans        &trans          &trans           &trans
+&trans  &trans          &trans          &trans           &trans         &trans      &trans  &trans                                                         &trans
             >;
         };
 
