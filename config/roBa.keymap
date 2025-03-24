@@ -87,9 +87,9 @@
         num_normalSymbol {
             bindings = <
 &kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE  &kp CARET             &kp MINUS      &kp AT_SIGN  &kp LEFT_BRACKET
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &none   &none      &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &trans     &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
 &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none      &kp COMMA             &kp PERIOD     &kp SLASH    &kp BACKSLASH
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                       &kp A
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                       &trans
             >;
         };
 
@@ -147,16 +147,7 @@
             >;
         };
 
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_9 {
+        layer_8 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
