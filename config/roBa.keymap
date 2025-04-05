@@ -96,19 +96,19 @@
 
         num_normalSymbol {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE  &kp CARET  &kp MINUS  &kp AT_SIGN  &kp LEFT_BRACKET
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK  &to 5        &kp RIGHT_BRACKET
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none      &trans     &trans     &trans       &kp BACKSLASH
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                        &trans
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &trans     &trans              &trans               &kp AT_SIGN  &kp LEFT_BRACKET
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &mkp MCLK  &mkp LCLK           &mkp RCLK            &to 5        &kp RIGHT_BRACKET
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans       &trans
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                           &trans
             >;
         };
 
         shiftSymbol {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &kp TILDE      &kp EQUAL         &kp PLUS              &kp ASTERISK           &kp RIGHT_BRACE
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &kp PIPE       &kp LESS_THAN     &kp GREATER_THAN      &kp QUESTION           &kp UNDERSCORE
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                        &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &kp A          &kp A             &kp PLUS              &kp ASTERISK           &kp RIGHT_BRACE
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &kp A          &kp A             &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
+&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                                                        &kp UNDERSCORE
             >;
         };
 
