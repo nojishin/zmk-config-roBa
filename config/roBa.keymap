@@ -33,7 +33,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <10 11>;
         };
 
         singleQuote {
