@@ -81,10 +81,10 @@
 
         shiftSymbol {
             bindings = <
-&kp A   &kp A      &kp SINGLE_QUOTE   &kp COLON         &kp A                       &kp NON_US_BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND   &kp AT_SIGN
-&trans  &kp GRAVE  &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp A   &trans      &trans  &kp SLASH             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
-&trans  &trans     &kp LESS_THAN      &kp GREATER_THAN  &trans  &trans      &trans  &kp PIPE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
-&trans  &trans     &trans             &trans            &trans  &trans      &trans  &trans                                                                             &trans
+&kp A   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp CARET                       &kp NON_US_BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
+&trans  &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp TILDE   &trans      &trans  &kp SLASH             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
+&trans  &kp PERCENT  &kp LESS_THAN      &kp GREATER_THAN  &kp DOLLAR  &trans      &trans  &kp PIPE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
+&trans  &trans       &trans             &trans            &trans      &trans      &trans  &trans                                                                             &trans
             >;
         };
 
