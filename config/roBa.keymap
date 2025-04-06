@@ -73,8 +73,8 @@
         win_default {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I     &kp O         &kp P
-&lt 4 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J  &kp K     &kp L         &lt 5 COMMA
-&lt 4 Z    &kp X         &kp C         &kp V                        &kp B        &kt SPACE             &kt BACKSPACE  &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
+&lt 3 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J  &kp K     &kp L         &lt 5 COMMA
+&lt 3 Z    &kp X         &kp C         &kp V                        &kp B        &kt SPACE             &kt BACKSPACE  &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 1 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                 &none
             >;
         };
@@ -128,12 +128,84 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to 0         &to 8         &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
         win_others {
+            bindings = <
+&trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                            &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
+&trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &bootloader  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
+&trans  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &kp INSERT       &trans      &bootloader  &trans  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &trans
+&trans  &trans               &trans               &trans               &trans           &trans      &trans       &trans                                                  &trans
+            >;
+        };
+
+        mac_default {
+            bindings = <
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y         &kp U  &kp I     &kp O         &kp P
+&lt 11 A   &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H         &kp J  &kp K     &kp L         &lt 5 COMMA
+&lt 11 Z   &kp X         &kp C         &kp V                        &kp B        &kt SPACE             &kt BACKSPACE  &kp N         &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 9 SPACE  &lt 9 INT_HENKAN      &kp BACKSPACE  &lt 10 ENTER                                 &none
+            >;
+        };
+
+        mac_symbol {
+            bindings = <
+&kp CARET   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp NON_US_BACKSLASH                      &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
+&kp TILDE   &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &trans                &trans      &trans  &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
+&kp DOLLAR  &kp PERCENT  &kp LESS_THAN      &kp GREATER_THAN  &trans                &trans      &trans  &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
+&trans      &trans       &trans             &trans            &trans                &trans      &trans  &trans                                                                      &trans
+            >;
+        };
+
+        mac_num_function {
+            bindings = <
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none   &kp F7  &kp F8  &kp F9  &kp F12
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                          &trans
+            >;
+        };
+
+        mac_arrow {
+            bindings = <
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans          &trans        &trans          &trans           &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp DELETE      &kp BACKSPACE   &trans           &trans         &trans      &trans  &trans          &trans        &trans          &trans           &trans
+&trans  &trans          &trans          &trans           &trans         &trans      &trans  &trans                                                         &trans
+            >;
+        };
+
+        mac_autoMause {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        mac_scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &kp LA(LEFT_ARROW)   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RA(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &trans
+            >;
+        };
+
+        mac_bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to 0         &to 8         &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        mac_others {
             bindings = <
 &trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                            &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
 &trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &bootloader  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
