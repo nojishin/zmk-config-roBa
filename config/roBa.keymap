@@ -18,47 +18,32 @@
 
         middleCkick {
             bindings = <&mkp MCLK>;
-            key-positions = <31 32>;
-        };
-
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <30 31>;
-        };
-
-        period {
-            bindings = <&kp PERIOD>;
             key-positions = <32 33>;
         };
 
-        tab {
+        tab1 {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <39 41>;
         };
 
-        singleQuote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <18 19>;
-        };
-
-        doubleQuotes {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 20>;
-        };
-
-        backQuote {
-            bindings = <&kp GRAVE>;
-            key-positions = <20 21>;
-        };
-
-        esc {
+        esc1 {
             bindings = <&kp ESCAPE>;
             key-positions = <41 38>;
         };
 
         layerBluetooth {
             bindings = <&mo 7>;
-            key-positions = <39 41>;
+            key-positions = <41 40>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        esc2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -87,19 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U    &kp I      &kp O       &kp P
-&lt 3 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J    &kp K      &lt 5 L     &kp SEMICOLON
-&lt 3 Z    &kp X         &kp C         &kp V                        &kp B        &none                 &none          &kp N        &lt 5 M  &kp COMMA  &kp PERIOD  &lt 4 SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 2 INT_HENKAN      &kp BACKSPACE  &lt 6 ENTER                                  &kp NON_US_BACKSLASH
-            >;
-        };
-
-        num_normalSymbol {
-            bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp NON_US_BACKSLASH  &kp CARET           &kp MINUS            &kp AT_SIGN  &kp LEFT_BRACKET
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &mkp MCLK             &mkp LCLK           &mkp RCLK            &mo 5        &kp RIGHT_BRACKET
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none                 &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans       &trans
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                                      &trans
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O     &kp P
+&lt 4 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J  &kp K      &kp L     &lt 5 PERIOD
+&lt 4 Z    &kp X         &kp C         &kp V                        &kp B        &none                 &none          &kp N        &kp M  &kp COMMA  &mkp MB1  &mkp MB2
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 4 SPACE  &lt 1 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                              &kp SEMI
             >;
         };
 
@@ -109,6 +85,15 @@
 &trans           &trans   &trans    &trans      &trans       &trans      &trans  &kp PIPE  &kp EQUAL  &kp PLUS       &kp ASTERISK      &kp RIGHT_BRACE
 &trans           &trans   &trans    &trans      &trans       &trans      &trans  &trans    &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &trans           &trans   &trans    &trans      &trans       &trans      &trans  &trans                                                &kp UNDERSCORE
+            >;
+        };
+
+        num_normalSymbol {
+            bindings = <
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp NON_US_BACKSLASH  &kp CARET           &kp MINUS            &kp AT_SIGN  &kp LEFT_BRACKET
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &mkp MCLK             &mkp LCLK           &mkp RCLK            &mo 5        &kp RIGHT_BRACKET
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &none                 &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans       &trans
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                                      &trans
             >;
         };
 
