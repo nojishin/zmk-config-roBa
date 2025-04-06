@@ -132,5 +132,14 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
+        others {
+            bindings = <
+&trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &trans                           &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
+&trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &trans  &trans      &bootloader  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
+&trans  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &trans  &trans      &bootloader  &trans  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &trans
+&trans  &trans               &trans               &trans               &trans  &trans      &trans       &trans                                                  &trans
+            >;
+        };
     };
 };
