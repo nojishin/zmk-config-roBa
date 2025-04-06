@@ -75,16 +75,16 @@
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O     &kp P
 &lt 4 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J  &kp K      &kp L     &lt 5 PERIOD
 &lt 4 Z    &kp X         &kp C         &kp V                        &kp B        &none                 &none          &kp N        &kp M  &kp COMMA  &mkp MB1  &mkp MB2
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 4 SPACE  &lt 1 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                              &kp SEMI
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_MUHENKAN  &lt 1 SPACE  &lt 1 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                              &none
             >;
         };
 
         shiftSymbol {
             bindings = <
-&kp EXCLAMATION  &kp DQT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPS  &kp SQT    &kp LPAR       &kp RPAR          &kp LEFT_BRACE
-&trans           &trans   &trans    &trans      &trans       &trans      &trans  &kp PIPE  &kp EQUAL  &kp PLUS       &kp ASTERISK      &kp RIGHT_BRACE
-&trans           &trans   &trans    &trans      &trans       &trans      &trans  &trans    &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&trans           &trans   &trans    &trans      &trans       &trans      &trans  &trans                                                &kp UNDERSCORE
+&kp A   &kp A   &kp A              &kp A      &kp A                       &kp A          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH          &kp AT_SIGN
+&trans  &trans  &kp DOUBLE_QUOTES  &kp SQT    &trans  &trans      &trans  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp EXCLAMATION
+&trans  &trans  &kp SEMICOLON      &kp COLON  &trans  &trans      &trans  &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp QUESTION
+&trans  &trans  &trans             &trans     &trans  &trans      &trans  &trans                                                                         &trans
             >;
         };
 
@@ -108,10 +108,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
