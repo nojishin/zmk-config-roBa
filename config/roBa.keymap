@@ -70,7 +70,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        win_default {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O     &kp P
 &lt 4 A    &kp S         &kp D         &kp F                        &kp G        &none                 &none          &kp H        &kp J  &kp K      &kp L     &lt 5 PERIOD
@@ -79,7 +79,7 @@
             >;
         };
 
-        shiftSymbol {
+        win_symbol {
             bindings = <
 &kp CARET   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp NON_US_BACKSLASH                      &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
 &kp TILDE   &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &trans                &trans      &trans  &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
@@ -88,7 +88,7 @@
             >;
         };
 
-        num_normalSymbol {
+        win_num_function {
             bindings = <
 &kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &trans  &kp F1  &kp F2  &kp F3  &kp F10
 &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
@@ -97,7 +97,7 @@
             >;
         };
 
-        arrow {
+        win_arrow {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans          &trans        &trans          &trans           &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
@@ -106,7 +106,7 @@
             >;
         };
 
-        MOUSE {
+        win_autoMause {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -115,7 +115,7 @@
             >;
         };
 
-        SCROLL {
+        win_scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -124,7 +124,7 @@
             >;
         };
 
-        Bluetooth {
+        win_bluetooth {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
@@ -133,7 +133,7 @@
             >;
         };
 
-        others {
+        win_others {
             bindings = <
 &trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                            &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
 &trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &bootloader  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
