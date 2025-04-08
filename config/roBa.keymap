@@ -117,10 +117,10 @@
 
         win_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans        &trans              &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &kp LA(LEFT_ARROW)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT)  &kp LA(RIGHT)       &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans        &trans              &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT)  &kp LA(RIGHT)       &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
         };
 
