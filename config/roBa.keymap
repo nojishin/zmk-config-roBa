@@ -18,7 +18,7 @@
 
         middleCkick {
             bindings = <&mkp MCLK>;
-            key-positions = <32 33>;
+            key-positions = <33 31>;
         };
 
         tab1 {
