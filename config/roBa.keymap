@@ -45,6 +45,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        eisuu {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <25 24>;
+        };
+
+        kana {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <31 30>;
+        };
     };
 
     macros {
