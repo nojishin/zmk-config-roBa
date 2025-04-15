@@ -81,19 +81,19 @@
 
         win_symbol {
             bindings = <
-&kp CARET   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp NON_US_BACKSLASH                      &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
-&kp TILDE   &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &trans                &trans      &trans  &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
-&kp DOLLAR  &kp PERCENT  &kp LESS_THAN      &kp GREATER_THAN  &trans                &trans      &trans  &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
-&trans      &trans       &trans             &trans            &trans                &trans      &trans  &trans                                                                      &trans
+&kp CARET   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp MINUS                                        &kp SLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
+&kp TILDE   &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp PLUS       &kp NON_US_BACKSLASH      &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
+&kp DOLLAR  &kp PERCENT  &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSLASH  &trans                    &trans  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
+&trans      &trans       &trans             &trans            &trans         &trans                    &trans  &trans                                                                     &trans
             >;
         };
 
         win_num_function {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &trans  &kp F1  &kp F2  &kp F3  &kp F10
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                          &trans
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp SLASH     &kp F1  &kp F2  &kp F3  &kp F10
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp ASTERISK  &kp F4  &kp F5  &kp F6  &kp F11
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &trans        &kp F7  &kp F8  &kp F9  &kp F12
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                &trans
             >;
         };
 
