@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
+    - name: zmk-pmw3610-driver-improve-scroll
       remote: nojishin
       revision: scroll-acceleration-feature 
   self:
