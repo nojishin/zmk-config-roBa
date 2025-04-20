@@ -32,7 +32,7 @@
         };
 
         bluetoothLayer {
-            bindings = <&mo 11>;
+            bindings = <&mo 8>;
             key-positions = <41 40>;
         };
 
