@@ -26,13 +26,13 @@
             key-positions = <39 41>;
         };
 
-        esc1 {
-            bindings = <&kp ESCAPE>;
+        functionLayer_esc1 {
+            bindings = <&lt 3 ESCAPE>;
             key-positions = <41 38>;
         };
 
-        layerBluetooth {
-            bindings = <&mo 6>;
+        bluetoothLayer {
+            bindings = <&mo 8>;
             key-positions = <41 40>;
         };
 
@@ -44,6 +44,11 @@
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+        };
+
+        toYoutubeLayer {
+            bindings = <&mo 10>;
+            key-positions = <38 37>;
         };
     };
 
@@ -72,37 +77,37 @@
 
         win_default {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                       &kp Y        &kp U  &kp I     &kp O         &kp P
-&lt 3 A    &kp S         &kp D         &kp F                        &kp G        &kt SPACE                      &kt BACKSPACE   &kp H        &kp J  &kp K     &kp L         &lt 5 COMMA
-&lt 3 Z    &kp X         &kp C         &kp V                        &kp B        &kp LANGUAGE_2                 &kp LANGUAGE_1  &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_2  &lt 1 SPACE  &mt LEFT_SHIFT LANGUAGE_1      &kp BACKSPACE   &lt 2 ENTER                                 &none
+&kp Q                 &kp W         &kp E         &kp R                 &kp T                                                       &kp Y        &kp U  &kp I     &kp O         &kp P
+&lt 6 A               &kp S         &kp D         &kp F                 &kp G        &kt SPACE                      &kt BACKSPACE   &kp H        &kp J  &kp K     &kp L         &lt 7 COMMA
+&lt 6 Z               &kp X         &kp C         &kp V                 &kp B        &kp LANGUAGE_2                 &kp LANGUAGE_1  &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
+&mt LCTRL LANGUAGE_2  &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL LANGUAGE_2  &lt 1 SPACE  &mt LEFT_SHIFT LANGUAGE_1      &kp BACKSPACE   &lt 2 ENTER                                 &mt RIGHT_SHIFT LANGUAGE_1
             >;
         };
 
         win_symbol {
             bindings = <
-&kp CARET   &kp GRAVE    &kp SINGLE_QUOTE   &kp COLON         &kp MINUS                                        &kp SLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
-&kp TILDE   &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp PLUS       &kp NON_US_BACKSLASH      &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
-&kp DOLLAR  &kp PERCENT  &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSLASH  &trans                    &trans  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
-&trans      &trans       &trans             &trans            &trans         &trans                    &trans  &trans                                                                     &trans
+&kp CARET   &kp GRAVE      &kp SINGLE_QUOTE   &kp COLON         &kp AT_SIGN                                    &kp PIPE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
+&kp TILDE   &kp PERCENT    &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp PLUS     &kp NON_US_BACKSLASH      &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
+&kp DOLLAR  &kp BACKSLASH  &kp LESS_THAN      &kp GREATER_THAN  &kp MINUS    &trans                    &trans  &kp SLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
+&trans      &trans         &trans             &trans            &trans       &trans                    &trans  &trans                                                                     &trans
             >;
         };
 
         win_num_function {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp SLASH     &kp F1  &kp F2  &kp F3  &kp F10
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp ASTERISK  &kp F4  &kp F5  &kp F6  &kp F11
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &trans        &kp F7  &kp F8  &kp F9  &kp F12
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                &trans
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp GRAVE    &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp COLON     &kp SINGLE_QUOTE
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp PERIOD   &kp PLUS       &kp MINUS          &kp ASTERISK  &kp SLASH
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &kp PERCENT  &kp PIPE       &kp AMPERSAND      &kp EQUAL     &kp COMMA
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                                       &trans
             >;
         };
 
-        win_arrow {
+        win_function {
             bindings = <
-&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans          &trans        &trans          &trans           &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp DELETE      &kp BACKSPACE   &trans           &trans         &trans      &trans  &trans          &trans        &trans          &trans           &trans
-&trans  &trans          &trans          &trans           &trans         &trans      &trans  &trans                                                         &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &trans      &kp PRINTSCREEN    &trans           &trans         &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &to 11      &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LC(T))  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &trans      &kp LC(LG(C))      &kp LC(F8)       &kp LC(LG(Z))  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
         };
 
@@ -124,21 +129,57 @@
             >;
         };
 
+        win_leftArrow {
+            bindings = <
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp BACKSPACE   &kp DELETE      &trans           &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans         &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        win_rightArrow {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &kp PAGE_UP    &kp HOME  &kp UP         &kp END     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans    &kp BACKSPACE  &kp DELETE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
+            >;
+        };
+
         win_bluetooth {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &to 9         &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        win_youtube {
+            bindings = <
+&kp GREATER_THAN  &kp J     &kp L      &kt SPACE  &kp C_VOLUME_UP                              &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt 6 LESS_THAN   &kp LEFT  &kp RIGHT  &kp F      &kp C_VOLUME_DOWN  &kp LS(N)      &kp RS(N)  &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt 7 LESS_THAN
+&lt 6 PERIOD      &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp LS(P)      &kp RS(P)  &kp K_MUTE         &kp SPACE  &mkp MB1  &mo 5      &mkp MB2
+&kp SINGLE_QUOTE  &trans    &trans     &to 0      &to 0              &to 0          &to 0      &to 0                                              &trans
+            >;
+        };
+
+        win_toYoutube {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &to 9   &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
         win_others {
             bindings = <
-&trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                            &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
-&trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &bootloader  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
-&trans  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &kp INSERT       &trans      &bootloader  &trans  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &trans
-&trans  &trans               &trans               &trans               &trans           &trans      &trans       &trans                                                  &trans
+&trans  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                       &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
+&trans  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &trans  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
+&trans  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &kp INSERT       &trans      &trans  &trans  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &trans
+&trans  &trans               &trans               &to 0                &to 0            &to 0       &to 0   &to 0                                                   &trans
             >;
         };
     };
