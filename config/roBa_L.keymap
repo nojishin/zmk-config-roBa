@@ -165,7 +165,7 @@
             >;
         };
 
-        win_toYoutube {
+        win_toYoutube_volume {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
