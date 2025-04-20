@@ -99,10 +99,10 @@
 
         win_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &trans      &trans             &trans           &trans  &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &trans      &trans             &trans           &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &trans      &trans             &trans           &trans         &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LC(T))  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &trans      &kp LC(LG(C))      &kp LC(F8)       &kp LC(LG(Z))  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
         };
 
