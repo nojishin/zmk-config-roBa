@@ -90,10 +90,10 @@
 
         win_num_function {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp SLASH  &kp F1    &kp F2     &kp F3        &kp F10
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp A      &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH
-&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &trans     &kp F7    &kp F8     &kp F9        &kp F12
-&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                        &trans
+&kp SLASH        &kp KP_NUMBER_1  &kp KP_NUMBER_2           &kp KP_NUMBER_3  &kp MINUS                            &kp SLASH  &kp F1    &kp F2         &kp F3        &kp F10
+&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5           &kp KP_NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp A      &kp PLUS  &kp MINUS      &kp ASTERISK  &kp SLASH
+&kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8           &kp KP_NUMBER_9  &kp PERIOD  &kp EQUAL        &trans  &trans     &kp PIPE  &kp AMPERSAND  &kp F9        &kp F12
+&trans           &trans           &mt LEFT_ALT KP_NUMBER_0  &trans           &trans      &trans           &trans  &trans                                            &trans
             >;
         };
 
