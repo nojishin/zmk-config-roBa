@@ -31,7 +31,7 @@
             key-positions = <41 38>;
         };
 
-        layerBluetooth {
+        bluetoothLayer {
             bindings = <&mo 9>;
             key-positions = <41 40>;
         };
@@ -44,6 +44,11 @@
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+        };
+
+        toYoutubeLayer {
+            bindings = <&mo 11>;
+            key-positions = <38 37>;
         };
     };
 
@@ -146,7 +151,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &to 10        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
@@ -162,10 +167,19 @@
 
         win_youtube {
             bindings = <
-&kp GREATER_THAN  &kp J     &kp L      &sk SPACE  &kp C_VOLUME_UP                  &kp C_VOLUME_UP    &kp    &kp J      &kp L      &kp GREATER_THAN
-&kp LESS_THAN     &kp LEFT  &kp RIGHT  &kp F      &kp C_VOLUME_DOWN  &kp      &kp  &kp C_VOLUME_DOWN  &sk F  &kp LEFT   &kp RIGHT  &kp LESS_THAN
-&kp PERIOD        &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp      &kp  &kp K_MUTE         &kp C  &kp SPACE  &sk SPACE  &kp PERIOD
-&kp SINGLE_QUOTE  &kp       &kp        &kp        &kp                &kp      &kp  &kp                                             &kp SINGLE_QUOTE
+&kp GREATER_THAN  &kp J     &kp L      &kt SPACE  &kp C_VOLUME_UP                              &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt 6 LESS_THAN   &kp LEFT  &kp RIGHT  &kp F      &kp C_VOLUME_DOWN  &kp LS(N)      &kp RS(N)  &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt 7 LESS_THAN
+&lt 6 PERIOD      &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp LS(P)      &kp RS(P)  &kp K_MUTE         &kp SPACE  &mkp MB1  &sl 5      &mkp MB2
+&kp SINGLE_QUOTE  &trans    &trans     &to 0      &to 0              &to 0          &to 0      &to 0                                              &trans
+            >;
+        };
+
+        win_toYoutube {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &to 10  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
