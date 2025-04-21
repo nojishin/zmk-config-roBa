@@ -104,10 +104,10 @@
 
         win_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &trans      &kp PRINTSCREEN    &trans           &trans         &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &to 14      &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LC(T))  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &trans      &kp LC(LG(C))      &kp LC(F8)       &kp LC(LG(Z))  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &kp PRINTSCREEN  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LC(LG(D))  &kp LC(LG(F4))
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &to 14      &trans  &kp K_MUTE       &kp C_VOLUME_DOWN       &kp C_VOLUME_UP          &kp LG(LC(T))  &kp LG(TAB)
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &trans           &kp LC(LG(C))           &kp LC(F8)               &kp LC(LG(Z))  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                           &trans
             >;
         };
 
