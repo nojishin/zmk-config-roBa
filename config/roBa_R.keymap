@@ -7,7 +7,7 @@
     snipe-layers = <6>;
 
     arrows {
-        layers = <7 8>;
+        layers = <8 10>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
@@ -20,7 +20,7 @@
     };
 
     volume {
-        layers = <10>;
+        layers = <12>;
         bindings =
                 <&none>,
                 <&none>,
