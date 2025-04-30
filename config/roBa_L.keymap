@@ -196,7 +196,7 @@
             bindings = <
 &kp GREATER_THAN  &kp J     &kp L      &kt SPACE  &kp C_VOLUME_UP                              &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
 &lt 7 LESS_THAN   &kp LEFT  &kp RIGHT  &kp F      &kp C_VOLUME_DOWN  &kp LS(N)      &kp RS(N)  &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt 10 LESS_THAN
-&lt 7 PERIOD      &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp LS(P)      &kp RS(P)  &kp K_MUTE         &kp SPACE  &mkp MB1  &mo 5      &mkp MB2
+&lt 7 PERIOD      &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp LS(P)      &kp RS(P)  &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
 &kp SINGLE_QUOTE  &trans    &trans     &to 0      &to 0              &to 0          &to 0      &to 0                                              &trans
             >;
         };
