@@ -50,6 +50,11 @@
             bindings = <&mo 12>;
             key-positions = <38 37>;
         };
+
+        ctrlShift {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <39 38>;
+        };
     };
 
     macros {
