@@ -21,11 +21,6 @@
             key-positions = <33 31>;
         };
 
-        tab1 {
-            bindings = <&kp TAB>;
-            key-positions = <39 41>;
-        };
-
         functionLayer_esc1 {
             bindings = <&lt 3 ESCAPE>;
             key-positions = <41 38>;
@@ -48,12 +43,12 @@
 
         toYoutubeLayer {
             bindings = <&mo 12>;
-            key-positions = <38 37>;
+            key-positions = <38 39>;
         };
 
         ctrlShift {
             bindings = <&kp LS(LCTRL)>;
-            key-positions = <39 38>;
+            key-positions = <38 37>;
         };
     };
 
