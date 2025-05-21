@@ -7,6 +7,85 @@
 #define SCROLL 5
 #define NUM 6
 
+// OS設定を日本語キーボードのまま使用するための変換定義
+#define JP_DQUOTE         AT                // "
+#define JP_AMPERSAND      CARET             // &
+#define JP_QUOTE          AMPERSAND         // '
+#define JP_EQUAL          UNDER             // =
+#define JP_CARET          EQUAL             // ^
+#define JP_YEN            0x89              // ¥
+#define JP_PLUS           COLON             // +
+#define JP_TILDE          PLUS              // ~
+#define JP_PIPE           LS(0x89)          // |
+#define JP_AT             LEFT_BRACKET      // @
+#define JP_COLON          SINGLE_QUOTE      // :
+#define JP_ASTERISK       DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE      LEFT_BRACE        // `
+#define JP_UNDERSCORE     LS(0x87)          // _
+#define JP_LBRACKET       RIGHT_BRACKET     // [
+#define JP_RBRACKET       BACKSLASH         // ]
+#define JP_LPAREN         ASTERISK          // (
+#define JP_RPAREN         LEFT_PARENTHESIS  // )
+#define JP_LBRACE         RIGHT_BRACE       // {
+#define JP_RBRACE         PIPE              // }
+#define JP_KANA           LANGUAGE_1        // かな
+#define JP_EISU           LANGUAGE_2        // 英数
+#define JP_HANZEN         GRAVE             // 半角/全角
+#define JP_HASH           HASH              // #
+#define JP_PERCENT        PERCENT           // %
+#define JP_SEMICOLON      SEMICOLON         // ;
+#define JP_PLUS           PLUS              // +
+#define JP_MINUS          MINUS             // -
+#define JP_SLASH          SLASH             // /
+#define JP_ASTERISK       ASTERISK          // *
+#define JP_EQUAL          EQUAL             // =
+#define JP_EXCLAMATION    EXCLAMATION       // !
+#define JP_QUESTION       QUESTION          // ?
+#define JP_DOLLAR         DOLLAR            // $
+#define JP_BACKSLASH      BACKSLASH         // \
+#define JP_LESS_THAN      LESS_THAN         // <
+#define JP_GREATER_THAN   GREATER_THAN      // >
+
+// Layer名を定義
+enum {
+    L_UBUNTU_DEFAULT,
+    L_WIN_DEFAULT,
+    L_MAC_DEFAULT,
+    L_IPAD_DEFAULT,
+    L_AUTOMOUSE,
+    L_ALT_SCROLL,
+    L_COMMAND_SCROLL,
+    L_ALT_CURSORSNIPE,
+    L_COMMAND_CURSORSNIPE,
+    L_TAB,
+    L_US_SYMBOL,
+    L_JIS_SYMBOL,
+    L_US_NUM,
+    L_JIS_NUM,
+    L_UBUNTU_NUMPAD,
+    L_WIN_NUMPAD,
+    L_MAC_IPAD_NUMPAD,
+    L_UBUNTU_FUNCTION,
+    L_WIN_FUNCTION,
+    L_MAC_FUNCTION,
+    L_IPAD_FUNCTION,
+    L_LEFTARROW,
+    L_LEFTARROW_ENABLETRACKBALL,
+    L_RIGHTARROW,
+    L_RIGHTARROW_ENABLETRACKBALL,
+    L_UBUNTU_BLUETOOTH,
+    L_WIN_BLUETOOTH,
+    L_MAC_BLUETOOTH,
+    L_IPAD_BLUETOOTH,
+    L_UBUNTU_VOLUME_TOYOUTUBE,
+    L_WIN_VOLUME_TOYOUTUBE,
+    L_MAC_VOLUME_TOYOUTUBE,
+    L_IPAD_VOLUME,
+    L_UBUNTU_YOUTUBE,
+    L_WIN_YOUTUBE,
+    L_MAC_YOUTUBE
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -77,37 +156,37 @@
 
         ubuntu_default {
             bindings = <
-&lt 14 Q   &kp W         &kp E         &kp R                   &kp T                                                      &kp Y         &kp U  &kp I     &kp O         &lt 16 P
-&lt 13 A   &lt 20 S      &kp D         &kp F                   &kp G        &none                          &none          &kp H         &kp J  &kp K     &kp L         &lt 16 COMMA
-&lt 13 Z   &kp X         &kp C         &kp V                   &kp B        &kp LS(LCTRL)                  &none          &kp N         &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt 9 SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt 11 ENTER                                 &kp RIGHT_SHIFT
+&lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                   &kp T                                                                &kp Y               &kp U  &kp I     &kp O                     &kp P
+&lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                   &kp G                  &none                          &none          &kp H               &kp J  &kp K     &kp L                     &lt L_RIGHTARROW COMMA
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                  &kp LS(LCTRL)                  &none          &kp N               &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
+&kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt L_US_SYMBOL SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt L_US_NUM ENTER                                             &kp RIGHT_SHIFT
             >;
         };
 
         win_default {
             bindings = <
-&lt 14 Q   &kp W         &kp E         &kp R                   &kp T                                                      &kp Y         &kp U  &kp I     &kp O         &lt 16 P
-&lt 13 A   &lt 20 S      &kp D         &kp F                   &kp G        &none                          &none          &kp H         &kp J  &kp K     &kp L         &lt 16 COMMA
-&lt 13 Z   &kp X         &kp C         &kp V                   &kp B        &kp LS(LCTRL)                  &none          &kp N         &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt 9 SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt 11 ENTER                                 &kp RIGHT_SHIFT
+&lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                   &kp T                                                                 &kp Y                &kp U  &kp I     &kp O                     &kp P
+&lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                   &kp G                   &none                          &none          &kp H                &kp J  &kp K     &kp L                     &lt L_RIGHTARROW COMMA
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                   &kp LS(LCTRL)                  &none          &kp N                &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
+&kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt L_JIS_NUM ENTER                                             &kp RIGHT_SHIFT
             >;
         };
 
         mac_default {
             bindings = <
-&lt 14 Q          &kp W         &kp E      &kp R                        &kp T                                                      &kp Y         &kp U  &kp I     &kp O         &lt 16 P
-&lt 13 A          &lt 20 S      &kp D      &kp F                        &kp G        &none                          &none          &kp H         &kp J  &kp K     &kp L         &lt 16 COMMA
-&lt 13 Z          &kp X         &kp C      &kp V                        &kp B        &kp LS(LEFT_COMMAND)           &none          &kp N         &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_COMMAND LANGUAGE_1  &lt 9 SPACE  &mt LEFT_SHIFT LANGUAGE_2      &kp BACKSPACE  &lt 11 ENTER                                 &kp RIGHT_SHIFT
+&lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                     &kp T                                                          &kp Y                &kp U  &kp I     &kp O                        &kp P
+&lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                     &kp G                   &none                   &none          &kp H                &kp J  &kp K     &kp L                        &lt L_RIGHTARROW COMMA
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &none          &kp N                &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
+&kp LEFT_COMMAND                    &kp LEFT_ALT  &kp LCTRL     &mt LEFT_COMMAND JP_EISU  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT JP_KANA  &kp BACKSPACE  &lt L_JIS_NUM ENTER                                                &kp RIGHT_SHIFT
             >;
         };
 
         ipad_default {
             bindings = <
-&lt 14 Q          &kp W         &kp E      &kp R                        &kp T                                                      &kp Y         &kp U  &kp I     &kp O         &lt 16 P
-&lt 13 A          &lt 20 S      &kp D      &kp F                        &kp G        &none                          &none          &kp H         &kp J  &kp K     &kp L         &lt 16 COMMA
-&lt 13 Z          &kp X         &kp C      &kp V                        &kp B        &kp LS(LEFT_COMMAND)           &none          &kp N         &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_COMMAND LANGUAGE_1  &lt 9 SPACE  &mt LEFT_SHIFT LANGUAGE_2      &kp BACKSPACE  &lt 11 ENTER                                 &kp RIGHT_SHIFT
+&lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                     &kp T                                                          &kp Y               &kp U  &kp I     &kp O                        &kp P
+&lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                     &kp G                   &none                   &none          &kp H               &kp J  &kp K     &kp L                        &lt L_RIGHTARROW COMMA
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &none          &kp N               &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
+&kp LEFT_COMMAND                    &kp LEFT_ALT  &kp LCTRL     &mt LEFT_COMMAND JP_EISU  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT JP_KANA  &kp BACKSPACE  &lt L_JIS_NUM ENTER                                               &kp RIGHT_SHIFT
             >;
         };
 
@@ -131,14 +210,14 @@
 
         command_scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans              &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &kp LA(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans               &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LC(JP_RBRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(JP_LBRACKET)  &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
             >;
         };
 
-        alt_cursolSnipe {
+        alt_cursorSnipe {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans              &trans               &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &kp LA(RIGHT_ARROW)  &trans  &trans
@@ -149,10 +228,19 @@
 
         command_cursorSnipe {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans              &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans              &kp LA(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans               &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LC(JP_RBRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(JP_LBRACKET)  &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
+            >;
+        };
+
+        tab {
+            bindings = <
+&trans   &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -167,14 +255,32 @@
 
         jis_symbol {
             bindings = <
-&kp CARET   &kp GRAVE      &kp SINGLE_QUOTE   &kp COLON         &kp AT_SIGN                                    &kp PIPE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
-&kp TILDE   &kp PERCENT    &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp PLUS     &kp NON_US_BACKSLASH      &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
-&kp DOLLAR  &kp BACKSLASH  &kp LESS_THAN      &kp GREATER_THAN  &kp MINUS    &trans                    &trans  &kp SLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
-&trans      &trans         &trans             &trans            &trans       &trans                    &trans  &trans                                                                     &trans
+&kp JP_CARET    &kp JP_BACKQUOTE  &kp JP_QUOTE      &kp JP_COLON          &kp JP_AT                                     &kp JP_PIPE       &kp JP_LBRACE     &kp JP_RBRACE     &kp JP_HASH         &kp JP_AMPERSAND
+&kp JP_TILDE    &kp JP_PERCENT    &kp JP_DQUOTE     &kp JP_SEMICOLON      &kp JP_PLUS   &kp NON_US_BACKSLASH    &trans  &kp JP_ASTERISK   &kp JP_LPAREN     &kp JP_RPAREN     &kp JP_EQUAL        &kp JP_EXCLAMATION
+&kp JP_DOLLAR   &kp JP_BACKSLASH  &kp JP_LESS_THAN  &kp JP_GREATER_THAN   &kp JP_MINUS  &trans                  &trans  &kp JP_SLASH      &kp JP_LBRACKET   &kp JP_RBRACKET   &kp JP_UNDERSCORE   &kp JP_QUESTION
+&trans          &trans            &trans            &trans                &trans        &trans                  &trans  &trans                                                                    &trans
             >;
         };
 
-        win_num_function {
+        us_num {
+            bindings = <
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &kp F6          &kp F7        &kp F8        &kp F9        &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans    &trans  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp PERCENT   &trans    &trans  &kp SEMICOLON   &kp COMMA     &kp PERIOD    &kp F11       &kp F12
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                    &trans
+            >;
+        };
+
+        jis_num {
+            bindings = <
+&kp F1        &kp F2        &kp F3            &kp F4        &kp F5                            &kp F6            &kp F7        &kp F8          &kp F9        &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &trans    &trans  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0
+&kp JP_PLUS   &kp JP_MINUS  &kp JP_ASTERISK   &kp JP_SLASH  &kp JP_PERCENT  &trans    &trans  &kp JP_SEMICOLON  &kp JP_COMMA  &kp JP_PERIOD   &kp F11       &kp F12
+&trans        &trans        &trans            &trans        &trans          &trans    &trans  &trans                                                        &trans
+            >;
+        };
+
+        ubuntu_numPad {
             bindings = <
 &kp SLASH     &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3  &kp MINUS                            &kp GRAVE    &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp COLON     &kp SINGLE_QUOTE
 &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5           &kp NUMBER_6  &kp PLUS    &kp PERCENT      &trans  &kp PERIOD   &kp PLUS       &kp MINUS          &kp ASTERISK  &kp SLASH
@@ -183,16 +289,62 @@
             >;
         };
 
+        win_numPad {
+            bindings = <
+&kp JP_SLASH     &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3  &kp JP_MINUS                              &kp JP_BACKQUOTE  &kp JP_SEMICOLON  &kp JP_DQUOTE      &kp JP_COLON     &kp JP_QUOTE
+&kp JP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5           &kp NUMBER_6  &kp JP_PLUS    &kp JP_PERCENT     &trans  &kp JP_PERIOD     &kp JP_PLUS       &kp JP_MINUS       &kp JP_ASTERISK  &kp JP_SLASH
+&kp NUMBER_0     &kp NUMBER_7  &kp NUMBER_8           &kp NUMBER_9  &kp JP_PERIOD  &kp JP_EQUAL       &trans  &kp JP_PERCENT    &kp JP_PIPE       &kp JP_AMPERSAND   &kp JP_EQUAL     &kp JP_COMMA
+&trans           &trans        &mt LEFT_ALT NUMBER_0  &trans        &trans         &trans             &trans  &trans                                                                  &trans
+            >;
+        };
+
+        mac_ipad_numPad {
+            bindings = <
+&kp JP_SLASH     &kp NUMBER_1  &kp NUMBER_2               &kp NUMBER_3  &kp JP_MINUS                              &kp JP_BACKQUOTE  &kp JP_SEMICOLON  &kp JP_DQUOTE      &kp JP_COLON     &kp JP_QUOTE
+&kp JP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5               &kp NUMBER_6  &kp JP_PLUS    &kp JP_PERCENT     &trans  &kp JP_PERIOD     &kp JP_PLUS       &kp JP_MINUS       &kp JP_ASTERISK  &kp JP_SLASH
+&kp NUMBER_0     &kp NUMBER_7  &kp NUMBER_8               &kp NUMBER_9  &kp JP_PERIOD  &kp JP_EQUAL       &trans  &kp JP_PERCENT    &kp JP_PIPE       &kp JP_AMPERSAND   &kp JP_EQUAL     &kp JP_COMMA
+&trans           &trans        &mt LEFT_COMMAND NUMBER_0  &trans        &trans         &trans             &trans  &trans                                                                  &trans
+            >;
+        };
+
+        ubuntu_function {
+            bindings = <
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans   &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &trans   &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &trans                  &trans                   &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                       &trans
+            >;
+        };
+
         win_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                      &kp C_VOLUME_UP    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LC(LG(D))  &kp LC(LG(F4))
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &to 21      &trans  &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &kp LG(LC(T))  &kp LG(TAB)
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans  &kp K_MUTE         &kp LC(LG(C))           &kp LC(F8)               &kp LC(LG(Z))  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                             &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LC(LG(D))  &kp LC(LG(F4))
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans       &trans   &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &kp LG(LC(T))  &kp LG(TAB)
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LC(LG(C))           &kp LC(F8)               &kp LC(LG(Z))  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                             &trans
             >;
         };
 
-        win_leftArrow {
+        mac_function {
+            bindings = <
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans         &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp LG(LS(3))         &kp LG(LS(4))      &kp LG(LS(5))  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LG(LS(c))         &kp LG(LS(2))      &trans         &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                     &trans
+            >;
+        };
+
+        ipad_function {
+            bindings = <
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                     &trans
+            >;
+        };
+
+
+        leftArrow {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -201,7 +353,7 @@
             >;
         };
 
-        win_leftArrow_enableTrackball {
+        leftArrow_enableTrackball {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                        &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -210,7 +362,7 @@
             >;
         };
 
-        win_rightArrow {
+        rightArrow {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &kp PAGE_UP    &kp HOME  &kp UP         &kp END     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &trans
@@ -219,12 +371,21 @@
             >;
         };
 
-        win_rightArrow_enableTrackball {
+        rightArrow_enableTrackball {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &kp PAGE_UP    &kp HOME  &kp UP         &kp END     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans    &kp BACKSPACE  &kp DELETE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
+            >;
+        };
+
+        ubuntu_bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans                &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_YOUTUBE  &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                          &bt BT_CLR_ALL
             >;
         };
 
@@ -232,8 +393,35 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to 19        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_WINDOWS_YOUTUBE  &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        mac_bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_MAC_YOUTUBE  &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        ipad_bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        ubuntu_volume_toYoutube {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_UBUNTU_YOUTUBE  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -241,35 +429,53 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to 19  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_WINDOWS_YOUTUBE  &trans      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        mac_volume_toYoutube {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_MAC_YOUTUBE  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        ipad_volume {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        ubuntu_youtube {
+            bindings = <
+&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE            &kp C_VOLUME_UP                                                  &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt L_ALT_SCROLL LESS_THAN         &kp LEFT  &kp RIGHT  &kp F                 &kp C_VOLUME_DOWN  &kp LS(N)                &kp RS(N)            &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
+&lt L_ALT_SCROLL PERIOD            &sk HOME  &kp END    &kp SPACE             &kp K_MUTE         &kp LS(P)               &kp RS(P)             &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp SINGLE_QUOTE                   &trans    &trans     &to L_UBUNTU_DEFAULT  &kp SPACE          &to L_UBUNTU_DEFAULT    &to L_UBUNTU_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
         win_youtube {
             bindings = <
-&kp GREATER_THAN  &kp J     &kp L      &kt SPACE  &kp C_VOLUME_UP                              &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt 13 LESS_THAN  &kp LEFT  &kp RIGHT  &kp F      &kp C_VOLUME_DOWN  &kp LS(N)      &kp RS(N)  &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt 16 LESS_THAN
-&lt 13 PERIOD     &sk HOME  &kp END    &kp SPACE  &kp K_MUTE         &kp LS(P)      &kp RS(P)  &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp SINGLE_QUOTE  &trans    &trans     &to 1      &kp SPACE          &to 1          &to 1      &kp SPACE                                          &trans
+&kp JP_GREATER_THAN                 &kp J     &kp L      &kt SPACE              &kp C_VOLUME_UP                                                &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp JP_GREATER_THAN
+&lt L_ALT_SCROLL JP_LESS_THAN       &kp LEFT  &kp RIGHT  &kp F                  &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)              &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL JP_LESS_THAN
+&lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE              &kp K_MUTE         &kp LS(P)            &kp RS(P)              &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp JP_QUOTE                        &trans    &trans     &to L_WINDOWS_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WINDOWS_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
-        win_tab {
+        mac_youtube {
             bindings = <
-&trans   &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&kp TAB  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        win_others {
-            bindings = <
-&kp KP_NUMLOCK  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_3  &kp SCROLLLOCK                       &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &trans
-&trans          &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp PAUSE_BREAK  &trans      &trans  &trans  &kp LANGUAGE_4  &kp LANGUAGE_5  &kp LANGUAGE_6  &trans
-&trans          &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &kp INSERT       &trans      &trans  &trans  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &trans
-&trans          &trans               &trans               &to 1                &to 1            &to 1       &to 1   &to 1                                                   &trans
+&kp JP_GREATER_THAN                     &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp JP_GREATER_THAN
+&lt L_COMMAND_SCROLL JP_LESS_THAN       &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)          &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_COMMAND_SCROLL JP_LESS_THAN
+&lt L_COMMAND_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp JP_QUOTE                            &trans    &trans     &to L_MAC_DEFAULT  &kp SPACE          &to L_MAC_DEFAULT    &to L_MAC_DEFAULT  &kp SPACE                                          &trans
             >;
         };
     };
