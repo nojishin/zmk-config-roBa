@@ -100,19 +100,57 @@ enum {
             key-positions = <33 31>;
         };
 
-        functionLayer_esc1 {
-            bindings = <&lt 12 ESCAPE>;
-            key-positions = <41 38>;
-        };
-
-        bluetoothLayer {
-            bindings = <&mo 17>;
+        ubuntu_bluetoothLayer {
+            bindings = <&mo L_UBUNTU_BLUETOOTH>;
             key-positions = <41 40>;
+            layers = <L_UBUNTU_DEFAULT>;
         };
 
-        tab2 {
+        win_bluetoothLayer {
+            bindings = <&mo L_WIN_BLUETOOTH>;
+            key-positions = <41 40>;
+            layers = <L_WINDOWS_DEFAULT>;
+        };
+
+        mac_bluetoothLayer {
+            bindings = <&mo L_MAC_BLUETOOTH>;
+            key-positions = <41 40>;
+            layers = <L_MAC_DEFAULT>;
+        };
+
+        ipad_bluetoothLayer {
+            bindings = <&mo L_IPAD_BLUETOOTH>;
+            key-positions = <41 40>;
+            layers = <L_IPAD_DEFAULT>;
+        };
+
+        tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+        };
+
+        ubuntu_esc1_funcitonLayer {
+            bindings = <&lt L_UBUNTU_FUNCTION ESCAPE>;
+            key-positions = <41 38>;
+            layers = <L_UBUNTU_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
+        };
+
+        win_esc1_funcitonLayer {
+            bindings = <&lt L_WIN_FUNCTION ESCAPE>;
+            key-positions = <41 38>;
+            layers = <L_WINDOWS_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
+        };
+
+        mac_esc1_funcitonLayer {
+            bindings = <&lt L_MAC_FUNCTION ESCAPE>;
+            key-positions = <41 38>;
+            layers = <L_MAC_DEFAULT L_COMMAND_SCROLL L_COMMAND_CURSORSNIPE>;
+        };
+
+        ipad_esc1_funcitonLayer {
+            bindings = <&lt L_IPAD_FUNCTION ESCAPE>;
+            key-positions = <41 38>;
+            layers = <L_IPAD_DEFAULT L_COMMAND_SCROLL L_COMMAND_CURSORSNIPE>;
         };
 
         esc2 {
@@ -120,14 +158,40 @@ enum {
             key-positions = <0 1>;
         };
 
-        toYoutubeLayer {
-            bindings = <&mo 18>;
+        ubuntu_toYoutubeLayer {
+            bindings = <&mo L_UBUNTU_YOUTUBE>;
             key-positions = <38 39>;
+            layers = <L_UBUNTU_DEFAULT>;
         };
 
-        ctrlShift {
-            bindings = <&kp LS(LCTRL)>;
-            key-positions = <38 37>;
+        win_toYoutubeLayer {
+            bindings = <&mo L_WIN_YOUTUBE>;
+            key-positions = <38 39>;
+            layers = <L_WINDOWS_DEFAULT>;
+        };
+
+        mac_toYoutubeLayer {
+            bindings = <&mo L_MAC_YOUTUBE>;
+            key-positions = <38 39>;
+            layers = <L_MAC_DEFAULT>;
+        };
+
+        ubuntu_numPadLayer {
+            bindings = <&mo L_UBUNTU_NUMPAD>;
+            key-positions = <28 41>;
+            layers = <L_UBUNTU_DEFAULT>;
+        };
+
+        win_numPadLayer {
+            bindings = <&mo L_WIN_NUMPAD>;
+            key-positions = <28 41>;
+            layers = <L_WINDOWS_DEFAULT>;
+        };
+
+        mac_ipad_numPadLayer {
+            bindings = <&mo L_MAC_IPAD_NUMPAD>;
+            key-positions = <28 41>;
+            layers = <L_MAC_DEFAULT L_IPAD_DEFAULT>;
         };
     };
 
