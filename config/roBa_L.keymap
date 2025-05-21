@@ -79,7 +79,7 @@
             bindings = <
 &lt 8 Q    &kp W         &kp E         &kp R                   &kp T                                                      &kp Y        &kp U  &kp I     &kp O         &lt 10 P
 &lt 7 A    &lt 14 S      &kp D         &kp F                   &kp G        &none                          &none          &kp H        &kp J  &kp K     &kp L         &lt 10 COMMA
-&lt 7 Z    &kp X         &kp C         &kp V                   &kp B        &mo 6                          &none          &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
+&lt 7 Z    &kp X         &kp C         &kp V                   &kp B        &kp LS(LCTRL)                  &none          &kp N        &kp M  &mkp MB1  &lt 5 PERIOD  &mkp MB2
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt 1 SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                                 &kp RIGHT_SHIFT
             >;
         };
