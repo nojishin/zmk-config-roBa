@@ -38,22 +38,23 @@
 #define L_COMMAND_SCROLL                 5
 #define L_ALT_CURSORSNIPE                6
 #define L_COMMAND_CURSORSNIPE            7
-#define L_US_SYMBOL                      8
-#define L_JIS_SYMBOL                     9
-#define L_US_NUM                        10
-#define L_JIS_NUM                       11
-#define L_UBUNTU_NUMPAD                 12
-#define L_WIN_NUMPAD                    13
-#define L_MAC_IPAD_NUMPAD               14
-#define L_UBUNTU_FUNCTION               15
-#define L_WIN_FUNCTION                  16
-#define L_MAC_FUNCTION                  17
-#define L_IPAD_FUNCTION                 18
-#define L_LEFTARROW                     19
-#define L_LEFTARROW_ENABLETRACKBALL     20
-#define L_RIGHTARROW                    21
-#define L_RIGHTARROW_ENABLETRACKBALL    22
-#define L_BLUETOOTH                     23
+#define L_TAB                            8
+#define L_US_SYMBOL                      9
+#define L_JIS_SYMBOL                    10
+#define L_US_NUM                        11
+#define L_JIS_NUM                       12
+#define L_UBUNTU_NUMPAD                 13
+#define L_WIN_NUMPAD                    14
+#define L_MAC_IPAD_NUMPAD               15
+#define L_UBUNTU_FUNCTION               16
+#define L_WIN_FUNCTION                  17
+#define L_MAC_FUNCTION                  18
+#define L_IPAD_FUNCTION                 19
+#define L_LEFTARROW                     20
+#define L_LEFTARROW_ENABLETRACKBALL     21
+#define L_RIGHTARROW                    22
+#define L_RIGHTARROW_ENABLETRACKBALL    23
+#define L_BLUETOOTH                     24
 
 
 &mt {
