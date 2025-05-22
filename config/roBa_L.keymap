@@ -102,7 +102,7 @@
         win_bluetoothLayer {
             bindings = <&mo L_WIN_BLUETOOTH>;
             key-positions = <41 40>;
-            layers = <L_WINDOWS_DEFAULT>;
+            layers = <L_WIN_DEFAULT>;
         };
 
         mac_bluetoothLayer {
@@ -131,7 +131,7 @@
         win_esc1_funcitonLayer {
             bindings = <&lt L_WIN_FUNCTION ESCAPE>;
             key-positions = <41 38>;
-            layers = <L_WINDOWS_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
+            layers = <L_WIN_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
         };
 
         mac_esc1_funcitonLayer {
@@ -160,7 +160,7 @@
         win_toYoutubeLayer {
             bindings = <&mo L_WIN_YOUTUBE>;
             key-positions = <38 39>;
-            layers = <L_WINDOWS_DEFAULT>;
+            layers = <L_WIN_DEFAULT>;
         };
 
         mac_toYoutubeLayer {
@@ -178,7 +178,7 @@
         win_numPadLayer {
             bindings = <&mo L_WIN_NUMPAD>;
             key-positions = <28 41>;
-            layers = <L_WINDOWS_DEFAULT>;
+            layers = <L_WIN_DEFAULT>;
         };
 
         mac_ipad_numPadLayer {
@@ -213,7 +213,7 @@
             bindings =
             <&bt BT_SEL 1>,
             <&macro_wait 500>,
-            <&to L_WINDOWS_DEFAULT>;
+            <&to L_WIN_DEFAULT>;
 
             label = "BT_win";
         };
@@ -567,7 +567,7 @@
 &kp JP_GREATER_THAN                 &kp J     &kp L      &kt SPACE              &kp C_VOLUME_UP                                                &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp JP_GREATER_THAN
 &lt L_ALT_SCROLL JP_LESS_THAN       &kp LEFT  &kp RIGHT  &kp F                  &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)              &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL JP_LESS_THAN
 &lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE              &kp K_MUTE         &kp LS(P)            &kp RS(P)              &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp JP_QUOTE                        &trans    &trans     &to L_WINDOWS_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WINDOWS_DEFAULT  &kp SPACE                                          &trans
+&kp JP_QUOTE                        &trans    &trans     &to L_WIN_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WIN_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
