@@ -400,7 +400,7 @@
         win_function {
             bindings = <
 &kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LC(LG(D))  &kp LC(LG(F4))
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans       &trans  &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &kp LG(LC(T))  &kp LG(TAB)
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &kp LG(LC(T))  &kp LG(TAB)
 &kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LC(LG(C))           &kp LC(F8)               &kp LC(LG(Z))  &trans
 &trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                             &trans
             >;
@@ -408,19 +408,19 @@
 
         mac_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans         &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp LG(LS(3))         &kp LG(LS(4))      &kp LG(LS(5))  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LG(LS(c))         &kp LG(LS(2))      &trans         &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                     &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                    &kp C_VOLUME_UP    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans         &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &kp LG(LS(3))       &kp LG(LS(4))        &kp LG(LS(5))  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans    &trans  &kp K_MUTE         &kp LG(LS(c))       &kp LG(LS(2))        &trans         &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                                     &trans
             >;
         };
 
         ipad_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans                    &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans    &trans  &kp K_MUTE         &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans                                     &trans
             >;
         };
 
@@ -510,7 +510,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_WIN_YOUTUBE  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_WIN_YOUTUBE      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                          &trans
             >;
         };
