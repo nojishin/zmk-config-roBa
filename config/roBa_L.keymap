@@ -574,7 +574,7 @@
             >;
         };
 
-        mac_youtube {
+        my_mac_yt_layer {
             bindings = <
 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
