@@ -79,7 +79,8 @@ enum {
     L_WIN_YOUTUBE,
     L_MAC_YOUTUBE
 };
-
+// Devicetreeのノードの開始の区切りを明確にする
+//
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
