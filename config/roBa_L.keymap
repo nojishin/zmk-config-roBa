@@ -410,7 +410,7 @@
             bindings = <
 &kp F10  &kp F1  &kp F2  &kp F3  &trans                    &kp C_VOLUME_UP    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans         &trans
 &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &kp LG(LS(3))       &kp LG(LS(4))        &kp LG(LS(5))  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans    &trans  &kp K_MUTE         &kp LG(LS(c))       &kp LG(LS(2))        &trans         &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans    &trans  &kp K_MUTE         &kp LG(LS(C))       &kp LG(LS(2))        &trans         &trans
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                                     &trans
             >;
         };
