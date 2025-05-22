@@ -371,19 +371,19 @@
 
         win_numPad {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans
+&kp SLASH     &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3  &kp MINUS                          &kp JP_BACKQUOTE  &kp SEMICOLON  &kp JP_DQUOTE   &kp COLON     &kp JP_QUOTE
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5           &kp NUMBER_6  &kp PLUS    &kp PERCENT    &trans  &kp PERIOD        &kp PLUS       &kp MINUS       &kp ASTERISK  &kp SLASH
+&kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8           &kp NUMBER_9  &kp PERIOD  &kp EQUAL      &trans  &kp PERCENT       &kp PIPE       &kp AMPERSAND   &kp EQUAL     &kp COMMA
+&trans        &trans        &mt LEFT_ALT NUMBER_0  &trans        &trans      &trans         &trans  &trans                                                         &trans
             >;
         };
 
         mac_ipad_numPad {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans
+&kp SLASH     &kp NUMBER_1  &kp NUMBER_2               &kp NUMBER_3  &kp MINUS                          &kp JP_BACKQUOTE  &kp SEMICOLON  &kp JP_DQUOTE   &kp COLON     &kp JP_QUOTE
+&kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5               &kp NUMBER_6  &kp PLUS    &kp PERCENT    &trans  &kp PERIOD        &kp PLUS       &kp MINUS       &kp ASTERISK  &kp SLASH
+&kp NUMBER_0  &kp NUMBER_7  &kp NUMBER_8               &kp NUMBER_9  &kp PERIOD  &kp EQUAL      &trans  &kp PERCENT       &kp PIPE       &kp AMPERSAND   &kp EQUAL     &kp COMMA
+&trans        &trans        &mt LEFT_COMMAND NUMBER_0  &trans        &trans      &trans         &trans  &trans                                                         &trans
             >;
         };
 
