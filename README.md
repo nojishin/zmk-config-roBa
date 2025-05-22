@@ -25,7 +25,6 @@ Macと統一するため。
 ## 日本語配列の適応の仕組み
 - [【ZMK】OS設定を日本語キーボードのまま使う｜kloir-z](https://note.com/kloir_z/n/n314e739f03a1) を参考に設定
 - `config/roBa_L.keymap`に変換定義を記述する。
-- 変換をしなくてよいキーもわかりやすさのため、一部再定義している。
 ## ショートカット
 ### Deepl
 #### Windows, Ubuntu
