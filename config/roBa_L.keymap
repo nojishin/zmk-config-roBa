@@ -499,19 +499,19 @@
 
         ubuntu_volume_toYoutube {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_UBUNTU_YOUTUBE  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_UBUNTU_YOUTUBE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
             >;
         };
 
         win_volume_toYoutube {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_WIN_YOUTUBE      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to L_WIN_YOUTUBE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
             >;
         };
 
@@ -535,28 +535,24 @@
 
         ubuntu_youtube {
             bindings = <
-&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE            &kp C_VOLUME_UP                                                  &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt L_ALT_SCROLL LESS_THAN         &kp LEFT  &kp RIGHT  &kp F                 &kp C_VOLUME_DOWN  &kp LS(N)                &kp RS(N)            &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
-&lt L_ALT_SCROLL PERIOD            &sk HOME  &kp END    &kp SPACE             &kp K_MUTE         &kp LS(P)               &kp RS(P)             &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp SINGLE_QUOTE                   &trans    &trans     &to L_UBUNTU_DEFAULT  &kp SPACE          &to L_UBUNTU_DEFAULT    &to L_UBUNTU_DEFAULT  &kp SPACE                                          &trans
+&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE             &kp C_VOLUME_UP                                                  &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F                 &kp C_VOLUME_DOWN  &kp LS(N)               &kp RS(N)             &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
+&lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE             &kp K_MUTE         &kp LS(P)               &kp RS(P)             &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp SINGLE_QUOTE                    &trans    &trans     &to L_UBUNTU_DEFAULT  &kp SPACE          &to L_UBUNTU_DEFAULT    &to L_UBUNTU_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
         win_youtube {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            kp RS(N)           &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
+&lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp JP_QUOTE                        &trans    &trans     &to L_WIN_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WIN_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
         my_mac_yt_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
