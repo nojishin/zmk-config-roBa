@@ -392,10 +392,10 @@
 
         win_numPad {
             bindings = <
-&kp JP_SLASH     &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3  &kp JP_MINUS                              &kp JP_BACKQUOTE  &kp JP_SEMICOLON  &kp JP_DQUOTE      &kp JP_COLON     &kp JP_QUOTE
-&kp JP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5           &kp NUMBER_6  &kp JP_PLUS    &kp JP_PERCENT     &trans  &kp JP_PERIOD     &kp JP_PLUS       &kp JP_MINUS       &kp JP_ASTERISK  &kp JP_SLASH
-&kp NUMBER_0     &kp NUMBER_7  &kp NUMBER_8           &kp NUMBER_9  &kp JP_PERIOD  &kp JP_EQUAL       &trans  &kp JP_PERCENT    &kp JP_PIPE       &kp JP_AMPERSAND   &kp JP_EQUAL     &kp JP_COMMA
-&trans           &trans        &mt LEFT_ALT NUMBER_0  &trans        &trans         &trans             &trans  &trans                                                                  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
