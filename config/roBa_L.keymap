@@ -31,11 +31,8 @@
 #define JP_HASH           HASH              // #
 #define JP_PERCENT        PERCENT           // %
 #define JP_SEMICOLON      SEMICOLON         // ;
-#define JP_PLUS           PLUS              // +
 #define JP_MINUS          MINUS             // -
 #define JP_SLASH          SLASH             // /
-#define JP_ASTERISK       ASTERISK          // *
-#define JP_EQUAL          EQUAL             // =
 #define JP_EXCLAMATION    EXCLAMATION       // !
 #define JP_QUESTION       QUESTION          // ?
 #define JP_DOLLAR         DOLLAR            // $
