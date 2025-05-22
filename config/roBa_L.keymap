@@ -356,10 +356,10 @@
 
         jis_symbol {
             bindings = <
-&kp JP_CARET  &kp JP_BACKQUOTE  &kp JP_QUOTE  &kp JP_COLON  &kp JP_AT  &kp JP_PIPE  &kp JP_LBRACE  &kp JP_RBRACE  &kp JP_HASH  &kp JP_AMPERSAND
-&kp JP_TILDE  &kp JP_PERCENT  &kp JP_DQUOTE  &kp JP_SEMICOLON  &kp JP_PLUS  &kp NON_US_BACKSLASH  &trans  &kp JP_ASTERISK  &kp JP_LPAREN  &kp JP_RPAREN  &kp JP_EQUAL  &kp JP_EXCLAMATION
-&kp JP_DOLLAR  &kp JP_BACKSLASH  &kp JP_LESS_THAN  &kp JP_GREATER_THAN  &kp JP_MINUS  &trans  &trans  &kp JP_SLASH  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_UNDERSCORE  &kp JP_QUESTION
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans
+&kp JP_CARE    &kp JP_BACKQUOTE  &kp JP_QUOTE      &kp JP_COLON         &kp JP_AT                                     &kp JP_PIPE      &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_HASH        &kp JP_AMPERSAND
+&kp JP_TILDE   &kp JP_PERCENT    &kp JP_DQUOTE     &kp JP_SEMICOLON     &kp JP_PLUS   &kp NON_US_BACKSLASH    &trans  &kp JP_ASTERISK  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_EQUAL       &kp JP_EXCLAMATION
+&kp JP_DOLLAR  &kp JP_BACKSLASH  &kp JP_LESS_THAN  &kp JP_GREATER_THAN  &kp JP_MINUS  &trans                  &trans  &kp JP_SLASH     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_UNDERSCORE  &kp JP_QUESTION
+&trans         &trans            &trans            &trans               &trans        &trans                  &trans  &trans                                                                &trans
             >;
         };
 
@@ -494,7 +494,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &BT_ubuntu             &BT_win            &BT_mac            &BT_ipad            &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_DEFAULT   &to L_WIN_DEFAULT  &to L_MAC_DEFAULT  &to L_IPAD_DEFAULT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_WIN_YOUTUBE  &trans             &trans             &trans              &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_WIN_YOUTUBE      &trans             &trans             &trans              &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                                           &bt BT_CLR_ALL
             >;
         };
