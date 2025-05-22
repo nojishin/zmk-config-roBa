@@ -54,7 +54,8 @@
 #define L_LEFTARROW_ENABLETRACKBALL     21
 #define L_RIGHTARROW                    22
 #define L_RIGHTARROW_ENABLETRACKBALL    23
-#define L_BLUETOOTH                     24
+#define L_VOLUME                        24
+#define L_BLUETOOTH                     25
 
 
 &mt {
@@ -126,6 +127,12 @@
             bindings = <&mo L_MAC_IPAD_NUMPAD>;
             key-positions = <28 41>;
             layers = <L_MAC_DEFAULT L_IPAD_DEFAULT>;
+        };
+
+        volume {
+            bindings = <&mo L_VOLUME>;
+            key-positions = <37 38>;
+            layers = <L_UBUNTU_DEFAULT L_WIN_DEFAULT L_MAC_DEFAULT L_IPAD_DEFAULT>;
         };
 
     };
@@ -408,6 +415,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN       &kp RIGHT   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans    &kp BACKSPACE  &kp DELETE  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
+            >;
+        };
+
+        volume {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
             >;
         };
 
