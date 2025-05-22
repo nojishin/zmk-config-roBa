@@ -248,8 +248,8 @@
         command_scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans               &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LC(JP_RBRACKET)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(JP_LBRACKET)  &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LG(JP_RBRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LG(JP_LBRACKET)  &trans               &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
             >;
         };
@@ -266,8 +266,8 @@
         command_cursorSnipe {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans               &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LC(JP_RBRACKET)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(JP_LBRACKET)  &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans               &kp LG(JP_RBRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LG(JP_LBRACKET)  &trans               &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                    &trans
             >;
         };
