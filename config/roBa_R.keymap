@@ -2,12 +2,12 @@
 
 #include "boards/shields/Test/roBa_R.overlay"
 &trackball {
-    automouse-layer = <MOUSE>;
-    scroll-layers = <SCROLL>;
-    snipe-layers = <6>;
+    // automouse-layer = <L_AUTOMOUSE>;
+    scroll-layers = <L_ALT_SCROLL L_COMMAND_SCROLL>;
+    snipe-layers = <L_ALT_CURSORSNIPE L_COMMAND_CURSORSNIPE>;
 
     arrows {
-        layers = <8 10>;
+        layers = <L_LEFTARROW L_LEFTARROW_ENABLETRACKBALL L_RIGHTARROW L_RIGHTARROW_ENABLETRACKBALL>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
@@ -20,7 +20,7 @@
     };
 
     volume {
-        layers = <12>;
+        layers = <L_UBUNTU_VOLUME_TOYOUTUBE L_WIN_VOLUME_TOYOUTUBE L_MAC_VOLUME_TOYOUTUBE L_IPAD_VOLUME>;
         bindings =
                 <&none>,
                 <&none>,
