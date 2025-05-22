@@ -170,18 +170,12 @@
             layers = <L_WIN_DEFAULT>;
         };
 
-        mac_numPadLayer {
-            bindings = <&mo L_MAC_NUMPAD>;
+        mac_ipad_numPadLayer {
+            bindings = <&mo L_MAC_IPAD_NUMPAD>;
             key-positions = <28 41>;
-            layers = <L_MAC_DEFAULT>;
+            layers = <L_MAC_DEFAULT L_IPAD_DEFAULT>;
         };
 
-        ipad_numPadLayer {
-            bindings = <&mo L_IPAD_NUMPAD>;
-            key-positions = <28 41>;
-            layers = <L_IPAD_DEFAULT>;
-        };
-        
     };
 
     macros {
