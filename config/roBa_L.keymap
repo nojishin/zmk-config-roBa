@@ -545,14 +545,18 @@
         win_youtube {
             bindings = <
 &lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            kp RS(N)           &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
+&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)          &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
 &lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
 &kp JP_QUOTE                        &trans    &trans     &to L_WIN_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WIN_DEFAULT  &kp SPACE                                          &trans
             >;
         };
 
-        my_mac_yt_layer {
+        mac_youtube {
             bindings = <
+&lt L_COMMAND_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
+&lt L_COMMAND_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            kp RS(N)           &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_COMMAND_SCROLL LESS_THAN
+&lt L_COMMAND_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
+&kp JP_QUOTE                            &trans    &trans     &to L_MAC_DEFAULT  &kp SPACE          &to L_MAC_DEFAULT    &to L_MAC_DEFAULT  &kp SPACE                                          &trans
             >;
         };
     };
