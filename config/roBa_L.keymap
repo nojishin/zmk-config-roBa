@@ -356,10 +356,10 @@
 
         jis_symbol {
             bindings = <
-&kp JP_CARET    &kp JP_BACKQUOTE  &kp JP_QUOTE      &kp JP_COLON      &kp JP_AT                                           &kp JP_PIPE       &kp JP_LBRACE     &kp JP_RBRACE     &kp JP_HASH         &kp JP_AMPERSAND
-&kp JP_TILDE    &kp JP_PERCENT    &kp JP_DQUOTE     &kp JP_SEMICOLON  &kp JP_PLUS   &kp NON_US_BACKSLASH    &trans        &kp JP_ASTERISK   &kp JP_LPAREN     &kp JP_RPAREN     &kp JP_EQUAL        &kp JP_EXCLAMATION
-&kp JP_DOLLAR   &kp JP_BACKSLASH  &kp JP_LESS_THAN  &kp JP_GREATER    &kp JP_MINUS  &trans                  &trans        &kp JP_SLASH      &kp JP_LBRACKET   &kp JP_RBRACKET   &kp JP_UNDERSCORE   &kp  JP_QUESTION
-&trans          &trans            &trans            &trans            &trans        &trans                  &trans        &trans                                                                    &trans
+&kp CARET   &kp GRAVE      &kp SINGLE_QUOTE   &kp COLON         &kp AT_SIGN                                    &kp PIPE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH        &kp AMPERSAND
+&kp TILDE   &kp PERCENT    &kp DOUBLE_QUOTES  &kp SEMICOLON     &kp PLUS     &kp NON_US_BACKSLASH      &trans  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp EXCLAMATION
+&kp DOLLAR  &kp BACKSLASH  &kp LESS_THAN      &kp GREATER_THAN  &kp MINUS    &trans                    &trans  &kp SLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp QUESTION
+&trans      &trans         &trans             &trans            &trans       &trans                    &trans  &trans                                                                     &trans
             >;
         };
 
