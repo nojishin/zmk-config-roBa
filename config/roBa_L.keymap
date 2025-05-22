@@ -41,46 +41,44 @@
 #define JP_GREATER_THAN   GREATER_THAN      // >
 
 // Layer名を定義
-enum {
-    L_UBUNTU_DEFAULT,
-    L_WIN_DEFAULT,
-    L_MAC_DEFAULT,
-    L_IPAD_DEFAULT,
-    L_AUTOMOUSE,
-    L_ALT_SCROLL,
-    L_COMMAND_SCROLL,
-    L_ALT_CURSORSNIPE,
-    L_COMMAND_CURSORSNIPE,
-    L_TAB,
-    L_US_SYMBOL,
-    L_JIS_SYMBOL,
-    L_US_NUM,
-    L_JIS_NUM,
-    L_UBUNTU_NUMPAD,
-    L_WIN_NUMPAD,
-    L_MAC_IPAD_NUMPAD,
-    L_UBUNTU_FUNCTION,
-    L_WIN_FUNCTION,
-    L_MAC_FUNCTION,
-    L_IPAD_FUNCTION,
-    L_LEFTARROW,
-    L_LEFTARROW_ENABLETRACKBALL,
-    L_RIGHTARROW,
-    L_RIGHTARROW_ENABLETRACKBALL,
-    L_UBUNTU_BLUETOOTH,
-    L_WIN_BLUETOOTH,
-    L_MAC_BLUETOOTH,
-    L_IPAD_BLUETOOTH,
-    L_UBUNTU_VOLUME_TOYOUTUBE,
-    L_WIN_VOLUME_TOYOUTUBE,
-    L_MAC_VOLUME_TOYOUTUBE,
-    L_IPAD_VOLUME,
-    L_UBUNTU_YOUTUBE,
-    L_WIN_YOUTUBE,
-    L_MAC_YOUTUBE
-};
-// Devicetreeのノードの開始の区切りを明確にする
-//
+#define L_UBUNTU_DEFAULT                 0
+#define L_WIN_DEFAULT                    1
+#define L_MAC_DEFAULT                    2
+#define L_IPAD_DEFAULT                   3
+#define L_AUTOMOUSE                      4
+#define L_ALT_SCROLL                     5
+#define L_COMMAND_SCROLL                 6
+#define L_ALT_CURSORSNIPE                7
+#define L_COMMAND_CURSORSNIPE            8
+#define L_TAB                            9
+#define L_US_SYMBOL                     10
+#define L_JIS_SYMBOL                    11
+#define L_US_NUM                        12
+#define L_JIS_NUM                       13
+#define L_UBUNTU_NUMPAD                 14
+#define L_WIN_NUMPAD                    15
+#define L_MAC_IPAD_NUMPAD               16
+#define L_UBUNTU_FUNCTION               17
+#define L_WIN_FUNCTION                  18
+#define L_MAC_FUNCTION                  19
+#define L_IPAD_FUNCTION                 20
+#define L_LEFTARROW                     21
+#define L_LEFTARROW_ENABLETRACKBALL     22
+#define L_RIGHTARROW                    23
+#define L_RIGHTARROW_ENABLETRACKBALL    24
+#define L_UBUNTU_BLUETOOTH              25
+#define L_WIN_BLUETOOTH                 26
+#define L_MAC_BLUETOOTH                 27
+#define L_IPAD_BLUETOOTH                28
+#define L_UBUNTU_VOLUME_TOYOUTUBE       29
+#define L_WIN_VOLUME_TOYOUTUBE          30
+#define L_MAC_VOLUME_TOYOUTUBE          31
+#define L_IPAD_VOLUME                   32
+#define L_UBUNTU_YOUTUBE                33
+#define L_WIN_YOUTUBE                   34
+#define L_MAC_YOUTUBE                   35
+
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
