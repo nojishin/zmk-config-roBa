@@ -195,7 +195,6 @@
             #binding-cells = <0>;
             bindings =
             <&bt BT_SEL 0>,
-            <&macro_wait 500>,
             <&to L_UBUNTU_DEFAULT>;
 
             label = "BT_ubuntu";
@@ -206,7 +205,6 @@
             #binding-cells = <0>;
             bindings =
             <&bt BT_SEL 1>,
-            <&macro_wait 500>,
             <&to L_WIN_DEFAULT>;
 
             label = "BT_win";
@@ -217,7 +215,6 @@
             #binding-cells = <0>;
             bindings =
             <&bt BT_SEL 2>,
-            <&macro_wait 500>,
             <&to L_MAC_DEFAULT>;
 
             label = "BT_mac";
@@ -228,7 +225,6 @@
             #binding-cells = <0>;
             bindings =
             <&bt BT_SEL 3>,
-            <&macro_wait 500>,
             <&to L_IPAD_DEFAULT>;
 
             label = "BT_ipad";
