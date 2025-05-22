@@ -182,9 +182,12 @@
         };
 
         mac_ipad_numPadLayer {
-            bindings = <&mo L_MAC_IPAD_NUMPAD>;
-            key-positions = <28 41>;
-            layers = <L_MAC_DEFAULT L_IPAD_DEFAULT>;
+            bindings = <
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
+            >;
         };
     };
 
@@ -401,46 +404,46 @@
 
         mac_ipad_numPad {
             bindings = <
-&kp JP_SLASH     &kp NUMBER_1  &kp NUMBER_2               &kp NUMBER_3  &kp JP_MINUS                              &kp JP_BACKQUOTE  &kp JP_SEMICOLON  &kp JP_DQUOTE      &kp JP_COLON     &kp JP_QUOTE
-&kp JP_ASTERISK  &kp NUMBER_4  &kp NUMBER_5               &kp NUMBER_6  &kp JP_PLUS    &kp JP_PERCENT     &trans  &kp JP_PERIOD     &kp JP_PLUS       &kp JP_MINUS       &kp JP_ASTERISK  &kp JP_SLASH
-&kp NUMBER_0     &kp NUMBER_7  &kp NUMBER_8               &kp NUMBER_9  &kp JP_PERIOD  &kp JP_EQUAL       &trans  &kp JP_PERCENT    &kp JP_PIPE       &kp JP_AMPERSAND   &kp JP_EQUAL     &kp JP_COMMA
-&trans           &trans        &mt LEFT_COMMAND NUMBER_0  &trans        &trans         &trans             &trans  &trans                                                                  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
         ubuntu_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans   &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &trans   &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &trans                  &trans                   &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                       &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
         win_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LC(LG(D))  &kp LC(LG(F4))
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans       &trans  &kp C_VOLUME_DOWN  &kp PRINTSCREEN         &trans                   &kp LG(LC(T))  &kp LG(TAB)
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LC(LG(C))           &kp LC(F8)               &kp LC(LG(Z))  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                             &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
         mac_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans         &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &kp LG(LS(3))         &kp LG(LS(4))      &kp LG(LS(5))  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &kp LG(LS(c))         &kp LG(LS(2))      &trans         &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                     &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
         ipad_function {
             bindings = <
-&kp F10  &kp F1  &kp F2  &kp F3  &trans                       &kp C_VOLUME_UP    &trans  &trans  &trans  &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans      &trans   &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans
-&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans      &trans   &kp K_MUTE         &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans      &trans   &trans                                     &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
