@@ -1,9 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-
-
 // OS設定を日本語キーボードのまま使用するための変換定義
 #define JP_DQUOTE         AT                // "
 #define JP_AMPERSAND      CARET             // &
@@ -38,7 +32,13 @@
 #define JP_DOLLAR         DOLLAR            // $
 #define JP_BACKSLASH      BACKSLASH         // \
 #define JP_LESS_THAN      LESS_THAN         // <
-#define JP_GREATER        GREATER_THAN      // >
+#define JP_GREATER_THAN   GREATER_THAN      // >
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
 
 // Layer名を定義
 #define L_UBUNTU_DEFAULT                 0
@@ -576,10 +576,10 @@
 
         mac_youtube {
             bindings = <
-&kp JP_GREATER                     &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp JP_GREATER
-&lt L_COMMAND_SCROLL JP_LESS_THAN  &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)          &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_COMMAND_SCROLL JP_LESS_THAN
-&lt L_COMMAND_SCROLL PERIOD        &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp JP_QUOTE                       &trans    &trans     &to L_MAC_DEFAULT  &kp SPACE          &to L_MAC_DEFAULT    &to L_MAC_DEFAULT  &kp SPACE                                          &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
