@@ -34,38 +34,26 @@
 #define L_WIN_DEFAULT                    1
 #define L_MAC_DEFAULT                    2
 #define L_IPAD_DEFAULT                   3
-#define L_AUTOMOUSE                      4
-#define L_ALT_SCROLL                     5
-#define L_COMMAND_SCROLL                 6
-#define L_ALT_CURSORSNIPE                7
-#define L_COMMAND_CURSORSNIPE            8
-#define L_TAB                            9
-#define L_US_SYMBOL                     10
-#define L_JIS_SYMBOL                    11
-#define L_US_NUM                        12
-#define L_JIS_NUM                       13
-#define L_UBUNTU_NUMPAD                 14
-#define L_WIN_NUMPAD                    15
-#define L_MAC_IPAD_NUMPAD               16
-#define L_UBUNTU_FUNCTION               17
-#define L_WIN_FUNCTION                  18
-#define L_MAC_FUNCTION                  19
-#define L_IPAD_FUNCTION                 20
-#define L_LEFTARROW                     21
-#define L_LEFTARROW_ENABLETRACKBALL     22
-#define L_RIGHTARROW                    23
-#define L_RIGHTARROW_ENABLETRACKBALL    24
-#define L_UBUNTU_BLUETOOTH              25
-#define L_WIN_BLUETOOTH                 26
-#define L_MAC_BLUETOOTH                 27
-#define L_IPAD_BLUETOOTH                28
-#define L_UBUNTU_VOLUME_TOYOUTUBE       29
-#define L_WIN_VOLUME_TOYOUTUBE          30
-#define L_MAC_VOLUME_TOYOUTUBE          31
-#define L_IPAD_VOLUME                   32
-#define L_UBUNTU_YOUTUBE                33
-#define L_WIN_YOUTUBE                   34
-#define L_MAC_YOUTUBE                   35
+#define L_ALT_SCROLL                     4
+#define L_COMMAND_SCROLL                 5
+#define L_ALT_CURSORSNIPE                6
+#define L_COMMAND_CURSORSNIPE            7
+#define L_US_SYMBOL                      8
+#define L_JIS_SYMBOL                     9
+#define L_US_NUM                        10
+#define L_JIS_NUM                       11
+#define L_UBUNTU_NUMPAD                 12
+#define L_WIN_NUMPAD                    13
+#define L_MAC_IPAD_NUMPAD               14
+#define L_UBUNTU_FUNCTION               15
+#define L_WIN_FUNCTION                  16
+#define L_MAC_FUNCTION                  17
+#define L_IPAD_FUNCTION                 18
+#define L_LEFTARROW                     19
+#define L_LEFTARROW_ENABLETRACKBALL     20
+#define L_RIGHTARROW                    21
+#define L_RIGHTARROW_ENABLETRACKBALL    22
+#define L_BLUETOOTH                     23
 
 
 &mt {
@@ -82,28 +70,9 @@
             key-positions = <33 31>;
         };
 
-        ubuntu_bluetoothLayer {
-            bindings = <&mo L_UBUNTU_BLUETOOTH>;
+        bluetoothLayer {
+            bindings = <&mo L_BLUETOOTH>;
             key-positions = <41 40>;
-            layers = <L_UBUNTU_DEFAULT>;
-        };
-
-        win_bluetoothLayer {
-            bindings = <&mo L_WIN_BLUETOOTH>;
-            key-positions = <41 40>;
-            layers = <L_WIN_DEFAULT>;
-        };
-
-        mac_bluetoothLayer {
-            bindings = <&mo L_MAC_BLUETOOTH>;
-            key-positions = <41 40>;
-            layers = <L_MAC_DEFAULT>;
-        };
-
-        ipad_bluetoothLayer {
-            bindings = <&mo L_IPAD_BLUETOOTH>;
-            key-positions = <41 40>;
-            layers = <L_IPAD_DEFAULT>;
         };
 
         tab {
@@ -114,48 +83,30 @@
         ubuntu_esc1_funcitonLayer {
             bindings = <&lt L_UBUNTU_FUNCTION ESCAPE>;
             key-positions = <41 38>;
-            layers = <L_UBUNTU_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
+            layers = <L_UBUNTU_DEFAULT>;
         };
 
         win_esc1_funcitonLayer {
             bindings = <&lt L_WIN_FUNCTION ESCAPE>;
             key-positions = <41 38>;
-            layers = <L_WIN_DEFAULT L_ALT_SCROLL L_ALT_CURSORSNIPE>;
+            layers = <L_WIN_DEFAULT>;
         };
 
         mac_esc1_funcitonLayer {
             bindings = <&lt L_MAC_FUNCTION ESCAPE>;
             key-positions = <41 38>;
-            layers = <L_MAC_DEFAULT L_COMMAND_SCROLL L_COMMAND_CURSORSNIPE>;
+            layers = <L_MAC_DEFAULT>;
         };
 
         ipad_esc1_funcitonLayer {
             bindings = <&lt L_IPAD_FUNCTION ESCAPE>;
             key-positions = <41 38>;
-            layers = <L_IPAD_DEFAULT L_COMMAND_SCROLL L_COMMAND_CURSORSNIPE>;
+            layers = <L_IPAD_DEFAULT>;
         };
 
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-        };
-
-        ubuntu_toYoutubeLayer {
-            bindings = <&mo L_UBUNTU_YOUTUBE>;
-            key-positions = <38 39>;
-            layers = <L_UBUNTU_DEFAULT>;
-        };
-
-        win_toYoutubeLayer {
-            bindings = <&mo L_WIN_YOUTUBE>;
-            key-positions = <38 39>;
-            layers = <L_WIN_DEFAULT>;
-        };
-
-        mac_toYoutubeLayer {
-            bindings = <&mo L_MAC_YOUTUBE>;
-            key-positions = <38 39>;
-            layers = <L_MAC_DEFAULT>;
         };
 
         ubuntu_numPadLayer {
@@ -274,15 +225,6 @@
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                     &kp G                   &none                   &none          &kp H               &kp J  &kp K     &kp L                        &lt L_RIGHTARROW COMMA
 &lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &none          &kp N               &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
 &kp LEFT_COMMAND                    &kp LEFT_ALT  &kp LCTRL     &mt LEFT_COMMAND JP_EISU  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT JP_KANA  &kp BACKSPACE  &lt L_JIS_NUM ENTER                                               &kp RIGHT_SHIFT
-            >;
-        };
-
-        autoMouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -468,102 +410,12 @@
             >;
         };
 
-        ubuntu_bluetooth {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                           &BT_ubuntu            &BT_win            &BT_mac            &BT_ipad            &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_DEFAULT  &to L_WIN_DEFAULT  &to L_MAC_DEFAULT  &to L_IPAD_DEFAULT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_YOUTUBE  &trans             &trans             &trans              &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                                          &bt BT_CLR_ALL
-            >;
-        };
-
-        win_bluetooth {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                           &BT_ubuntu             &BT_win            &BT_mac            &BT_ipad            &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_DEFAULT   &to L_WIN_DEFAULT  &to L_MAC_DEFAULT  &to L_IPAD_DEFAULT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_WIN_YOUTUBE      &trans             &trans             &trans              &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                                           &bt BT_CLR_ALL
-            >;
-        };
-
-        mac_bluetooth {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                           &BT_ubuntu            &BT_win            &BT_mac            &BT_ipad            &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_DEFAULT  &to L_WIN_DEFAULT  &to L_MAC_DEFAULT  &to L_IPAD_DEFAULT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_MAC_YOUTUBE     &trans             &trans             &trans              &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                                          &bt BT_CLR_ALL
-            >;
-        };
-
-        ipad_bluetooth {
+        bluetooth {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                           &BT_ubuntu            &BT_win            &BT_mac            &BT_ipad            &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &to L_UBUNTU_DEFAULT  &to L_WIN_DEFAULT  &to L_MAC_DEFAULT  &to L_IPAD_DEFAULT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans                &trans             &trans             &trans              &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                                          &bt BT_CLR_ALL
-            >;
-        };
-
-        ubuntu_volume_toYoutube {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_UBUNTU_YOUTUBE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                          &trans
-            >;
-        };
-
-        win_volume_toYoutube {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_WIN_YOUTUBE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
-            >;
-        };
-
-        mac_volume_toYoutube {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to L_MAC_YOUTUBE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
-            >;
-        };
-
-        ipad_volume {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        ubuntu_youtube {
-            bindings = <
-&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE             &kp C_VOLUME_UP                                                  &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F                 &kp C_VOLUME_DOWN  &kp LS(N)               &kp RS(N)             &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
-&lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE             &kp K_MUTE         &kp LS(P)               &kp RS(P)             &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp SINGLE_QUOTE                    &trans    &trans     &to L_UBUNTU_DEFAULT  &kp SPACE          &to L_UBUNTU_DEFAULT    &to L_UBUNTU_DEFAULT  &kp SPACE                                          &trans
-            >;
-        };
-
-        win_youtube {
-            bindings = <
-&lt L_ALT_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt L_ALT_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)          &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_ALT_SCROLL LESS_THAN
-&lt L_ALT_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp JP_QUOTE                        &trans    &trans     &to L_WIN_DEFAULT  &kp SPACE          &to L_WIN_DEFAULT    &to L_WIN_DEFAULT  &kp SPACE                                          &trans
-            >;
-        };
-
-        mac_youtube {
-            bindings = <
-&lt L_COMMAND_CURSORSNIPE GREATER_THAN  &kp J     &kp L      &kt SPACE          &kp C_VOLUME_UP                                            &kp C_VOLUME_UP    &kt SPACE  &kp J     &kp L      &kp GREATER_THAN
-&lt L_COMMAND_SCROLL LESS_THAN          &kp LEFT  &kp RIGHT  &kp F              &kp C_VOLUME_DOWN  &kp LS(N)            &kp RS(N)          &kp C_VOLUME_DOWN  &sk F      &kp LEFT  &kp RIGHT  &lt L_COMMAND_SCROLL LESS_THAN
-&lt L_COMMAND_SCROLL PERIOD             &sk HOME  &kp END    &kp SPACE          &kp K_MUTE         &kp LS(P)            &kp RS(P)          &kp K_MUTE         &kp SPACE  &trans    &trans     &trans
-&kp JP_QUOTE                            &trans    &trans     &to L_MAC_DEFAULT  &kp SPACE          &to L_MAC_DEFAULT    &to L_MAC_DEFAULT  &kp SPACE                                          &trans
             >;
         };
     };
