@@ -180,15 +180,6 @@
             key-positions = <28 41>;
             layers = <L_WIN_DEFAULT>;
         };
-
-        mac_ipad_numPadLayer {
-            bindings = <
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans
-            >;
-        };
     };
 
     macros {
@@ -576,10 +567,10 @@
 
         my_mac_yt_layer {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
