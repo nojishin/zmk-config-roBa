@@ -204,7 +204,7 @@
             bindings = <
 &lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                   &kp T                                                                &kp Y               &kp U  &kp I     &kp O                     &kp P
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                   &kp G                  &none                          &none          &kp H               &kp J  &kp K     &kp L                     &lt L_RIGHTARROW COMMA
-&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                  &kp LS(LCTRL)                  &none          &kp N               &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                  &kp LS(LCTRL)                  &kp RALT       &kp N               &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
 &kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt L_US_SYMBOL SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt L_US_NUM ENTER                                             &kp RIGHT_SHIFT
             >;
         };
@@ -213,7 +213,7 @@
             bindings = <
 &lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                   &kp T                                                                 &kp Y                &kp U  &kp I     &kp O                     &kp P
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                   &kp G                   &none                          &none          &kp H                &kp J  &kp K     &kp L                     &lt L_RIGHTARROW COMMA
-&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                   &kp LS(LCTRL)                  &none          &kp N                &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                   &kp LS(LCTRL)                  &kp RALT       &kp N                &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
 &kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt L_JIS_NUM ENTER                                             &kp RIGHT_SHIFT
             >;
         };
@@ -222,7 +222,7 @@
             bindings = <
 &lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                     &kp T                                                          &kp Y                &kp U  &kp I     &kp O                        &kp P
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                     &kp G                   &none                   &none          &kp H                &kp J  &kp K     &kp L                        &lt L_RIGHTARROW COMMA
-&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &none          &kp N                &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &kp RALT       &kp N                &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
 &kp LEFT_COMMAND                    &kp LEFT_ALT  &mt F4 LCTRL  &mt LEFT_COMMAND JP_EISU  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT JP_KANA  &kp BACKSPACE  &lt L_JIS_NUM ENTER                                                &kp RIGHT_SHIFT
             >;
         };
@@ -231,7 +231,7 @@
             bindings = <
 &lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                     &kp T                                                          &kp Y               &kp U  &kp I     &kp O                        &kp P
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                     &kp G                   &none                   &none          &kp H               &kp J  &kp K     &kp L                        &lt L_RIGHTARROW COMMA
-&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &none          &kp N               &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
+&lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                     &kp B                   &kp LS(LEFT_COMMAND)    &kp RALT       &kp N               &kp M  &mkp MB1  &lt L_COMMAND_SCROLL PERIOD  &mkp MB2
 &kp LEFT_COMMAND                    &kp LEFT_ALT  &kp LCTRL     &mt LEFT_COMMAND JP_EISU  &lt L_JIS_SYMBOL SPACE  &mt LEFT_SHIFT JP_KANA  &kp BACKSPACE  &lt L_JIS_NUM ENTER                                               &kp RIGHT_SHIFT
             >;
         };
