@@ -205,7 +205,7 @@
 &lt L_LEFTARROW_ENABLETRACKBALL Q   &kp W         &kp E         &kp R                   &kp T                                                                &kp Y               &kp U  &kp I     &kp O                     &kp P
 &lt L_LEFTARROW A                   &lt L_TAB S   &kp D         &kp F                   &kp G                  &none                          &none          &kp H               &kp J  &kp K     &kp L                     &lt L_RIGHTARROW COMMA
 &lt L_LEFTARROW Z                   &kp X         &kp C         &kp V                   &kp B                  &kp LS(LCTRL)                  &kp RALT       &kp N               &kp M  &mkp MB1  &lt L_ALT_SCROLL PERIOD   &mkp MB2
-&kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL LA(SPACE)     &lt L_US_SYMBOL SPACE  &mt LEFT_SHIFT LA(SPACE)       &kp BACKSPACE  &lt L_US_NUM ENTER                                             &kp RIGHT_SHIFT
+&kp LCTRL                           &kp LEFT_ALT  &kp LEFT_WIN  &mt LCTRL INT_MUHENKAN  &lt L_US_SYMBOL SPACE  &mt LEFT_SHIFT INT_HENKAN      &kp BACKSPACE  &lt L_US_NUM ENTER                                             &kp RIGHT_SHIFT
             >;
         };
 
